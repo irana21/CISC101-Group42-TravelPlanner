@@ -1,3 +1,5 @@
+Change Log (2025-11-14): 
+- Updated seasonal availibility rule to support 'activities outside active/peak seasons' preference
 ### **Module 3 — Feasibility & Guardrails**
 
 Apply these **if/else** checks to make sure plans are realistic and adapt to edge cases:
@@ -20,7 +22,7 @@ Apply these **if/else** checks to make sure plans are realistic and adapt to edg
 
 5. **Time Overrun**
    
-   - If total planned time > available hours → shorten lunch or pick a nearer stop.
+   - If total planned time > available hours → shorten lunch or pick a nearer stop. 
 
 6. **Mobility Needs**
    
@@ -33,4 +35,8 @@ Apply these **if/else** checks to make sure plans are realistic and adapt to edg
 8. **Bookings**
    
    - If activity usually needs a ticket → just remind the user to book it; never simulate bookings.
+  
+9. **Seasonal Availibility**
+
+   - If an activity is seasonal (e.g., boat tours, flower gardens, festivals) and the user’s date falls outside the active season → swap in a year-round equivalent nearby.
 
