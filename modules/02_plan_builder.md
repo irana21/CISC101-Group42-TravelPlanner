@@ -13,9 +13,9 @@ Added opening-hours and reservation checks.
 Enforced all constraints from Module 1.
 
 Added fallbacks when data is missing or options unavailable.
----
 
 **1. Build Candidate Activity List**
+---
 
 Generate a small set of activities (attractions, restaurants, parks, events).
 Each must include:
@@ -33,17 +33,17 @@ Opening hours + reservation needs
 Accessibility notes
 
 Missing info → mark as low-confidence.
----
 
 **2. Distance Rules**
+---
 
 Near lodging: <1 km
 
 Close by: <3 km
 If none meet the threshold, choose the closest alternative.
----
 
 **3. Budget Tracking**
+---
 
 Track the remaining budget for the trip/day.
 If an activity exceeds the budget:
@@ -54,9 +54,9 @@ Choose a free option
 
 Adjust stay duration
 If no option works, flag the conflict.
---
 
 **4. Build Each Travel Day**
+---
 for each travel day:
 
     Morning:
@@ -78,9 +78,9 @@ for each travel day:
 
 
 If no option fits, insert a fallback (park, café, scenic walk).
----
 
 **5. Enforce Module 1 Constraints**
+---
 
 Ensure itinerary matches:
 
